@@ -22,7 +22,7 @@
   </div>
 </header>
 
-<div class="menu-open" ngClass="{{ showMenu ? 'show' : 'close'}}">
+<div class="menu-open" *ngIf="showMenu" ngClass="{{ showMenu ? 'show' : ''}}">
   <nav>
     <ul>
       <li *ngFor="let menu of menuList" class="menu-items">

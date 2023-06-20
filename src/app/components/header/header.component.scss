@@ -69,6 +69,10 @@ header {
       color: $green;
     }
   }
+
+  div.menu-open {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -208,6 +212,7 @@ header {
     padding: 7rem 2rem 4rem;
     background-color: $dark-gray;
     transition: all .5s;
+    animation: showMenu .3s both linear;
 
     nav > ul {
       width: 100%;
@@ -250,14 +255,6 @@ header {
   }
 }
 
-div.menu-open.show {
-  animation: showMenu .3s both linear;
-}
-
-div.menu-open.close {
-  animation: hideMenu .3s both linear;
-}
-
 @keyframes showMenu {
   from {
     right: -20rem;
@@ -265,15 +262,5 @@ div.menu-open.close {
 
   to {
     right: 0;
-  }
-}
-
-@keyframes hideMenu {
-  from {
-    right: 0rem;
-  }
-
-  to {
-    right: -20rem;
   }
 }
