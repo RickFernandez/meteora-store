@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+@import './assets/_variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  text-align: center;
+}
+
+.txt-sm {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.btn {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  padding-block: .9rem;
+  letter-spacing: 0.457143px;
+}

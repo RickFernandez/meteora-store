@@ -1,0 +1,279 @@
+@import '../../../assets/_variables';
+
+header {
+  width: 100%;
+  padding: 1.2rem 2.3rem;
+  background-color: $black;
+  overflow: hidden;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  nav > ul {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    
+    li {
+      a {
+        color: $white;
+        
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        text-decoration: none;
+        
+        img {
+          height: 3.2rem;
+        }
+      }
+      
+      a:hover {
+        color: $green;
+      }
+      
+      a:has(> img) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    li.hamburguer-menu {
+      display: none;
+    }
+  }
+  
+  div {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    
+    input {
+      height: 100%;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      padding: .9rem 1.5rem;
+    }
+    
+    button {
+      padding-inline: 1.2rem;
+      border: 1px solid $white;
+      background-color: $black;
+    }
+    
+    button:hover {
+      cursor: pointer;
+      border-color: $green;
+      color: $green;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2.3rem 1rem;
+    
+    nav > ul {
+      gap: 2rem;
+      
+      li > a {
+        font-size: 13px;
+        line-height: 20px;
+        
+        img {
+          height: 2.4rem;
+        }
+      }
+    }
+    
+    div {
+      button,
+      input {
+        font-size: 13px;
+      }
+      
+      input {
+        width: 15rem;
+        height: 3.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    position: relative;
+    padding: 0;
+    flex-direction: column;
+
+    nav {
+      width: 100%;
+      padding: 2rem;
+
+      ul {
+        width: 100%;
+        justify-content: space-between;
+
+        li.menu-items {
+          display: none;
+        }
+
+        li.hamburguer-menu {
+          display: block;
+          z-index: 999;
+
+          div {
+            width: 4rem;
+            position: relative;
+            border: 1px solid $green;
+
+            display: flex;
+            justify-content: center;
+
+            transition: all .2s;
+          }
+
+          div::before {
+            position: absolute;
+            content: '';
+            bottom: .9rem;
+            width: 4rem;
+            border: 1px solid $green;
+            transition: all .5s;
+          }
+
+          div::after {
+            position: absolute;
+            content: '';
+            top: .9rem;
+            width: 4rem;
+            border: 1px solid $green;
+            transition: all .5s;
+          }
+
+          div.active {
+            border: none;
+            align-items: center;
+            transition: all .8s;
+          }
+
+          div.active::before {
+            top: 0;
+            transform: rotate(45deg);
+          }
+
+          div.active::after {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
+
+        li > a > img {
+          height: 100%;
+        }
+      }
+    }
+
+    div.search {
+      width: 100%;
+      padding: 2rem;
+      background-color: $white;
+
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+
+      input,
+      button {
+        color: $black;
+        font-size: 1.4rem;
+        background-color: $white;
+        border: 1px solid $black;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  div.menu-open {
+    position: absolute;
+    top: 0;
+    right: -20rem;
+    width: 20rem;
+    padding: 7rem 2rem 4rem;
+    background-color: $dark-gray;
+    transition: all .5s;
+
+    nav > ul {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      li {
+        width: 100%;
+        padding-bottom: .8rem;
+        border-bottom: 1px solid $white;
+
+        a {
+          color: $white;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 23px;
+        }
+
+        a:hover,
+        a:active,
+        a.active {
+          color: $green;
+          font-weight: 700;
+        }
+
+      }
+
+      li:has(> a:active),
+      li:has(> a:hover),
+      li:has(> a.active) {
+        border-color: $green;
+      }
+    }
+  }
+}
+
+div.menu-open.show {
+  animation: showMenu .3s both linear;
+}
+
+div.menu-open.close {
+  animation: hideMenu .3s both linear;
+}
+
+@keyframes showMenu {
+  from {
+    right: -20rem;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes hideMenu {
+  from {
+    right: 0rem;
+  }
+
+  to {
+    right: -20rem;
+  }
+}

@@ -1,0 +1,35 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/">
+          <img src="../../../assets/Desktop/Logo desktop.png" alt="Logo Meteora">
+        </a>
+      </li>
+      <li *ngFor="let menu of menuList" class="menu-items">
+        <a routerLink="/{{ menu.toLowerCase() }}">
+          {{ menu }}
+        </a>
+      </li>
+      <li class="hamburguer-menu" (click)="onMenu($event.target)">
+        <div></div>
+      </li>
+    </ul>
+  </nav>
+  <div class="search">
+    <input type="text" name="searchProduct" id="searchProduct" placeholder="Digite o produto">
+    <button class="btn">Buscar</button>
+  </div>
+</header>
+
+<div class="menu-open" ngClass="{{ showMenu ? 'show' : 'close'}}">
+  <nav>
+    <ul>
+      <li *ngFor="let menu of menuList" class="menu-items">
+        <a>
+          {{ menu }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
