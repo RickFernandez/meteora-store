@@ -1,0 +1,55 @@
+img {
+  width: 100%;
+}
+
+div.picsum-img-wrapper > div {
+  width: 100%;
+  height: 55rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first {
+  background-image: url('../../../assets/Desktop/carousel-banner-1.png');
+}
+
+.second {
+  background-image: url('../../../assets/Desktop/carousel-banner-2.png');
+}
+
+.third {
+  background-image: url('../../../assets/Desktop/carousel-banner-3.png');
+}
+
+div.carousel-caption {
+  bottom: 40%;
+
+  h3 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 58px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+div.first-caption {
+  text-align: end;
+
+  img {
+    width: 50rem;
+  }
+}
+
+div.second-caption {
+  text-align: end;
+}
+
+div.third-caption {
+  text-align: start;
+}

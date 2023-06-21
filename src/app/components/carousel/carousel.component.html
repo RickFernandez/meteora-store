@@ -1,29 +1,30 @@
-<ngb-carousel *ngIf="images">
-	<ng-template ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img [src]="images[0]" alt="Random first slide" />
+<ngb-carousel *ngIf="imageList">
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <div class="first"></div>
+    </div>
+    <div class="carousel-caption first-caption">
+			<img src="../../../assets/Desktop/Identidade-visual---Meteora-branco-slogan 1.svg" alt="">
 		</div>
-		<div class="carousel-caption">
-			<h3>First slide label</h3>
-			<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <div class="second">
+      </div>
+    </div>
+    <div class="carousel-caption second-caption">
+			<h3>COLEÇÃO ATEMPORAL</h3>
+			<p>Estilo e qualidade para durar. </p>
 		</div>
-	</ng-template>
-	<ng-template ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img [src]="images[1]" alt="Random second slide" />
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper">
+      <div class="third">
+      </div>
+    </div>
+    <div class="carousel-caption third-caption">
+			<h3>COLEÇÃO ATEMPORAL</h3>
+			<p>Alto impacto visual, baixo impacto ambiental!</p>
 		</div>
-		<div class="carousel-caption">
-			<h3>Second slide label</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-		</div>
-	</ng-template>
-	<ng-template ngbSlide>
-		<div class="picsum-img-wrapper">
-			<img [src]="images[2]" alt="Random third slide" />
-		</div>
-		<div class="carousel-caption">
-			<h3>Third slide label</h3>
-			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-		</div>
-	</ng-template>
+  </ng-template>
 </ngb-carousel>
