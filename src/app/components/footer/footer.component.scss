@@ -1,0 +1,16 @@
+@import '../../../assets/variables';
+
+footer {
+  color: $white;
+  text-align: center;
+  padding: 1.7rem;
+  background-color: $black;
+  
+  p {
+    margin: 0;
+    
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

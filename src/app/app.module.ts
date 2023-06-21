@@ -14,6 +14,7 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { FacilitiesComponent } from './components/facilities/facilities.component';
 import { GetLeadsComponent } from './components/get-leads/get-leads.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { GetLeadsComponent } from './components/get-leads/get-leads.component';
         ProductComponent,
         ProductCardComponent,
         FacilitiesComponent,
-        GetLeadsComponent
+        GetLeadsComponent,
+        FooterComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
