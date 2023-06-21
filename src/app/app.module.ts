@@ -12,6 +12,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { FacilitiesComponent } from './components/facilities/facilities.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
         CategoryComponent,
         CategoryCardComponent,
         ProductComponent,
-        ProductCardComponent
+        ProductCardComponent,
+        FacilitiesComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

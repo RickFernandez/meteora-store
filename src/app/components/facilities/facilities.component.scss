@@ -1,0 +1,54 @@
+@import '../../../assets/variables';
+
+section {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: $black;
+
+  h2 {
+    color: $white;
+    margin-bottom: 4rem;
+  }
+
+  div.facilities.container {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div.facilitie {
+      height: 7.2rem;
+      display: flex;
+      gap: 2.4rem;
+      align-items: center;
+
+      img {
+        width: 7.2rem;
+        height: 7.2rem;
+      }
+
+      div.facilitie-txt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h6 {
+          color: $green;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 23px;
+        }
+
+        p {
+          color: $white;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
