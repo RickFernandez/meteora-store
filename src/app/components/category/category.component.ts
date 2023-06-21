@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ICategory } from 'src/app/shared/ICategory';
+import { ICategory } from 'src/app/shared/models/ICategory';
 
 @Component({
   selector: 'meteora-category',

@@ -1,0 +1,17 @@
+<div class="product-container">
+  <div class="card" *ngFor="let product of productList">
+    <div class="card-img">
+      <img src="{{ product.imgSrc }}" alt="produto {{ product.name }}">
+    </div>
+    <div class="card-body">
+      <h6 class="product-name">{{ product.name }}</h6>
+      <p class="product-description txt-sm">{{ product.description }}</p>
+      <span class="product-price">{{ product.price | currency : 'BRL' }}</span>
+    </div>
+    <div class="card-footer">
+      <button class="button">
+        Ver Mais
+      </button>
+    </div>
+  </div>
+</div>

@@ -10,6 +10,8 @@ import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CategoryCardComponent } from './components/category-card/category-card.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +21,9 @@ import { CategoryCardComponent } from './components/category-card/category-card.
         HomeComponent,
         CarouselComponent,
         CategoryComponent,
-        CategoryCardComponent
+        CategoryCardComponent,
+        ProductComponent,
+        ProductCardComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
