@@ -71,6 +71,23 @@ section {
         font-size: 16px;
         line-height: 23px;
       }
+
+      div.input {
+        input,
+        button {
+          font-size: 1.4rem !important;
+        }
+
+        input {
+          width: 25rem !important;
+          max-width: 30rem;
+          padding: 0.8rem 1.2rem !important;
+        }
+
+        button {
+          padding-inline: 1.2rem !important;
+        }
+      }
     }
   }
 }
