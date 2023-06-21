@@ -14,6 +14,7 @@ section {
     width: 100%;
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 
@@ -50,5 +51,14 @@ section {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.facilities.container {
+    justify-content: center;
+      div.facilitie {
+        width: 50%;
+      }
   }
 }

@@ -35,3 +35,20 @@ div.card-container {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  div.card-container {
+    gap: 2.4rem;
+
+    div.card {
+      width: 21rem;
+      height: 100%;
+
+      div.card-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

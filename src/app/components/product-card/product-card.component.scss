@@ -53,3 +53,13 @@ div.product-container {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  div.product-container {
+    grid-template-columns: 1fr 1fr;
+
+    div.card {
+      width: 33rem;
+    }
+  }
+}

@@ -53,3 +53,45 @@ div.second-caption {
 div.third-caption {
   text-align: start;
 }
+
+@media screen and (max-width: 768px) {
+  .first {
+    background-image: url('../../../assets/Tablet/Banner\ carousel\ 1\ _\ 768.png');
+  }
+  
+  .second {
+    background-image: url('../../../assets/Tablet/Banner\ carousel\ 2\ _\ 768.png');
+  }
+  
+  .third {
+    background-position: right !important;
+    background-image: url('../../../assets/Tablet/Banner\ carousel\ 3\ _\ 768.png');
+  }
+
+  div.carousel-caption {
+    h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 39px;
+    }
+  
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23px;
+    }
+  }
+
+  div.first-caption {
+    display: none;
+  }
+
+  div.second-caption {
+    right: 10%;
+  }
+  
+  div.third-caption {
+    left: 10%;
+  }
+
+}
