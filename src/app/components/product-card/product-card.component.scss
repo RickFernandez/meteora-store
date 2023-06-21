@@ -63,3 +63,12 @@ div.product-container {
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  div.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

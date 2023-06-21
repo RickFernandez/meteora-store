@@ -93,5 +93,34 @@ div.third-caption {
   div.third-caption {
     left: 10%;
   }
+}
 
+@media screen and (max-width: 425px) {
+  .first,
+  .second,
+  .third {
+    height: 47rem;
+  }
+
+  .first {
+    background-image: url('../../../assets/Mobile/Banner\ carousel\ 1\ _\ 375.png');
+  }
+  
+  .second {
+    background-image: url('../../../assets/Mobile/Banner\ carousel\ 2\ _\ 375.png');
+  }
+  
+  .third {
+    background-position: right !important;
+    background-image: url('../../../assets/Mobile/Banner\ carousel\ 3\ _\ 375.png');
+  }
+
+  div.second-caption,
+  div.third-caption {
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    padding: 5rem;
+    text-align: center;
+  }
 }

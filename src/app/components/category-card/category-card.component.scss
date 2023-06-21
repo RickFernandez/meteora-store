@@ -52,3 +52,13 @@ div.card-container {
     }
   }
 }
+
+@media screen and (max-width: 425px) {
+  div.card-container {
+    justify-content: center;
+
+    div.card {
+      width: 15.5rem;
+    }
+  }
+}
