@@ -8,6 +8,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { HomeComponent } from './screens/home/home.component';
 import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CategoryComponent } from './components/category/category.component';
+import { CategoryCardComponent } from './components/category-card/category-card.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +17,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
         HeaderComponent,
         LayoutComponent,
         HomeComponent,
-        CarouselComponent
+        CarouselComponent,
+        CategoryComponent,
+        CategoryCardComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

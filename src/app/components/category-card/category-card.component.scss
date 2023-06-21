@@ -1,0 +1,36 @@
+@import '../../../assets/variables';
+
+
+div.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+  div.card {
+    width: 16rem;
+    height: 20rem;
+  
+    border: none;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    div.card-img {
+      height: 100%;
+    }
+  
+    div.card-title {
+      width: 100%;
+      padding: .8rem 4rem;
+      background-color: $black;
+  
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}

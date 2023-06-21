@@ -1,0 +1,12 @@
+<div class="card-container">
+  <div class="card" *ngFor="let category of categoryList">
+    <div class="card-img">
+      <img src="{{ category.imgSrc }}" alt="categoria {{ category.name }}">
+    </div>
+    <div class="card-title">
+      <span>
+        {{ category.name }}
+      </span>
+    </div>
+  </div>
+</div>
